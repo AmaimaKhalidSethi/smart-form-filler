@@ -1,0 +1,4 @@
+# Versions confirmed via web research on 2026-07-05 (see README "Research Findings").
+pydantic==2.13.4
+groq==1.1.1
+pytest==9.1.1
