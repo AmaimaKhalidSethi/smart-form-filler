@@ -1,0 +1,124 @@
+[
+  {
+    "id": "TC-01",
+    "form_type": "job_application",
+    "description": "Hi, I'm Jane Doe (jane.doe@example.com). I'd like to apply for the Backend Engineer position. I have 5 years of experience with Python and PostgreSQL, and I can start on 2026-08-01.",
+    "expected": {
+      "full_name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "position_applied_for": "Backend Engineer",
+      "years_of_experience": 5,
+      "earliest_start_date": "2026-08-01"
+    },
+    "expect_complete_without_clarification": true
+  },
+  {
+    "id": "TC-02",
+    "form_type": "job_application",
+    "description": "Applying for the Data Scientist role. Skills: Python, SQL, machine learning. Looking for a fully remote position.",
+    "expected": {
+      "position_applied_for": "Data Scientist",
+      "remote_preference": "remote"
+    },
+    "expect_complete_without_clarification": false,
+    "expected_missing_fields": ["full_name", "email"]
+  },
+  {
+    "id": "TC-03",
+    "form_type": "job_application",
+    "description": "My name is Carlos Mendez, reach me at carlos.m@company.io or by phone at 555-0199. I want the Senior DevOps Engineer job, expecting around $145,000 a year.",
+    "expected": {
+      "full_name": "Carlos Mendez",
+      "email": "carlos.m@company.io",
+      "phone": "555-0199",
+      "position_applied_for": "Senior DevOps Engineer",
+      "desired_salary_usd": 145000
+    },
+    "expect_complete_without_clarification": true
+  },
+  {
+    "id": "TC-04",
+    "form_type": "job_application",
+    "description": "I have 8 years of experience in product management and prefer hybrid work.",
+    "expected": {
+      "years_of_experience": 8,
+      "remote_preference": "hybrid"
+    },
+    "expect_complete_without_clarification": false,
+    "expected_missing_fields": ["full_name", "email", "position_applied_for"]
+  },
+  {
+    "id": "TC-05",
+    "form_type": "job_application",
+    "description": "This is Aisha Khan, aisha.khan@mail.com, applying for the QA Automation Engineer role. Onsite only, no remote work.",
+    "expected": {
+      "full_name": "Aisha Khan",
+      "email": "aisha.khan@mail.com",
+      "position_applied_for": "QA Automation Engineer",
+      "remote_preference": "onsite"
+    },
+    "expect_complete_without_clarification": true
+  },
+  {
+    "id": "TC-06",
+    "form_type": "event_registration",
+    "description": "Please register Tom Reilly (tom.reilly@firm.com) for the AI Engineering Summit. He's bringing 2 colleagues, so 3 total attendees, and needs vegetarian meals.",
+    "expected": {
+      "full_name": "Tom Reilly",
+      "email": "tom.reilly@firm.com",
+      "event_name": "AI Engineering Summit",
+      "number_of_attendees": 3,
+      "dietary_restrictions": ["vegetarian"]
+    },
+    "expect_complete_without_clarification": true
+  },
+  {
+    "id": "TC-07",
+    "form_type": "event_registration",
+    "description": "I want a VIP ticket to DevConf. I'm from Acme Corp.",
+    "expected": {
+      "event_name": "DevConf",
+      "ticket_type": "vip",
+      "company_or_affiliation": "Acme Corp"
+    },
+    "expect_complete_without_clarification": false,
+    "expected_missing_fields": ["full_name", "email"]
+  },
+  {
+    "id": "TC-08",
+    "form_type": "event_registration",
+    "description": "Maria Lopez, maria.lopez@school.edu, signing up as a student for the Robotics Fair, attending virtually.",
+    "expected": {
+      "full_name": "Maria Lopez",
+      "email": "maria.lopez@school.edu",
+      "event_name": "Robotics Fair",
+      "ticket_type": "student"
+    },
+    "expect_complete_without_clarification": true
+  },
+  {
+    "id": "TC-09",
+    "form_type": "event_registration",
+    "description": "We need a general admission spot for the Marketing Expo, no allergies to worry about.",
+    "expected": {
+      "event_name": "Marketing Expo",
+      "ticket_type": "general"
+    },
+    "expect_complete_without_clarification": false,
+    "expected_missing_fields": ["full_name", "email"]
+  },
+  {
+    "id": "TC-10",
+    "form_type": "job_application",
+    "description": "Peter Chen (peter.chen@dev.io) is applying for Frontend Developer, 3 years experience, skills include React and TypeScript, wants $95000, start date flexible.",
+    "expected": {
+      "full_name": "Peter Chen",
+      "email": "peter.chen@dev.io",
+      "position_applied_for": "Frontend Developer",
+      "years_of_experience": 3,
+      "key_skills": ["React", "TypeScript"],
+      "desired_salary_usd": 95000
+    },
+    "expect_complete_without_clarification": true
+  }
+]
